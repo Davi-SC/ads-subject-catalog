@@ -1,0 +1,129 @@
+body {
+  margin: 0;
+}
+
+.top-bar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.container {
+  display: flex;
+  margin-top: 70px; /* Ajusta o margin-top conforme a altura da top-bar */
+  height: calc(100vh - 70px); /* Ajusta a altura disponível para o conteúdo */
+}
+
+.nav-center {
+  width: 60%;
+  background-color: #ffffff;
+  padding: 20px;
+  box-sizing: border-box;
+  overflow-y: auto; /* Permite a rolagem do conteúdo principal */
+}
+
+.nav-left {
+  width: 20%;
+  background-color: #f4f4f4;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+}
+.user-pic {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.user-name {
+  margin: 10px 0;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.nav-right {
+  width: 20%;
+  background-color: #f4f4f4;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+.modulos-block {
+  float: left;
+  width: 30%;
+  padding: 20px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  transition: background-color 0.3s ease;
+}
+.modulos-block:hover {
+  background-color: #c2c2c2;
+  cursor: pointer;
+}
+
+.home-button {
+  border-radius: 20%;
+  color: #fff;
+  margin-right: auto;
+  align-items: center;
+  display: flex;
+  border: 1px solid #ccc;
+  transition: background-color 0.3s ease;
+  background-color: #ccc;
+}
+
+.summary-block {
+  text-align: left;
+  margin-bottom: 5%;
+  padding: 20px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 100%;
+}
+
+.books-block {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.books {
+  box-sizing: border-box;
+  padding: 15px;
+  background-color: #f8f9fa;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+h3 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+ul {
+  list-style-type: disc;
+}
+li {
+  margin-bottom: 5px;
+}
+a {
+  text-decoration: none;
+  color: #333;
+}
+a:hover {
+  text-decoration: underline;
+  color: rgb(161, 161, 161);
+}
